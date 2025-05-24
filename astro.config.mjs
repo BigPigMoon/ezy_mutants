@@ -19,7 +19,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Введение",
-          link: "/ezy_mutants/intro",
+          link: "/intro",
         },
         {
           label: "Мир",
