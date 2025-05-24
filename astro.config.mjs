@@ -7,25 +7,34 @@ export default defineConfig({
   site: "https://bigpigmoon.github.io",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "Ezy Mutants",
       social: [
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/withastro/starlight",
+          href: "https://github.com/bigpigmoon/ezy_mutants",
         },
       ],
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
+          label: "Введение",
+          link: "/intro",
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Мир",
+          autogenerate: { directory: "world" },
+        },
+        {
+          label: "Персонаж",
+          autogenerate: { directory: "char" },
+        },
+        {
+          label: "Механики игры",
+          autogenerate: { directory: "game" },
+        },
+        {
+          label: "Раздел мастера",
+          autogenerate: { directory: "master" },
         },
       ],
     }),
