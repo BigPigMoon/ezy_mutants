@@ -8,6 +8,9 @@ export default defineConfig({
   base: "ezy_mutants",
   integrations: [
     starlight({
+      editLink: {
+        baseUrl: "https://github.com/bigpigmoon/ezy_mutants/edit/master/",
+      },
       title: "Ezy Mutants",
       social: [
         {
