@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightThemeNova from "starlight-theme-nova";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,18 +9,16 @@ export default defineConfig({
   base: "ezy_mutants",
   integrations: [
     starlight({
+      plugins: [starlightThemeNova()],
       editLink: {
         baseUrl: "https://github.com/bigpigmoon/ezy_mutants/edit/master/",
       },
       title: "Ezy Mutants",
-      defaultLocale: "ru",
+      defaultLocale: "root",
       locales: {
-        ru: {
+        root: {
           label: "Русский",
           lang: "ru",
-        },
-        en: {
-          label: "English",
         },
       },
       lastUpdated: true,
