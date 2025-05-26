@@ -12,13 +12,17 @@ export default defineConfig({
         baseUrl: "https://github.com/bigpigmoon/ezy_mutants/edit/master/",
       },
       title: "Ezy Mutants",
-      social: [
-        {
-          icon: "github",
-          label: "GitHub",
-          href: "https://github.com/bigpigmoon/ezy_mutants",
+      defaultLocale: "ru",
+      locales: {
+        ru: {
+          label: "Русский",
+          lang: "ru",
         },
-      ],
+        en: {
+          label: "English",
+        },
+      },
+      lastUpdated: true,
       sidebar: [
         {
           label: "Введение",
@@ -39,6 +43,18 @@ export default defineConfig({
         {
           label: "Раздел мастера",
           autogenerate: { directory: "master" },
+        },
+      ],
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/bigpigmoon/ezy_mutants",
+        },
+        {
+          icon: "telegram",
+          label: "Telegram",
+          href: "https://t.me/gamedevshiz",
         },
       ],
     }),
